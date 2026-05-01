@@ -1,0 +1,85 @@
+<!-- List:- -->
+
+
+<!-- 
+There are 3 types of list.
+1)Ordered List (ol)
+2)unordered List(ul)
+3)Description List(dl)
+
+.) li used for list item in ol and ul.
+.) dt(Description term) and dd(Description data) is used in dl.
+.) type="A", type="i" and type="1" is used in ol for ordering types. -->
+
+<!-- 
+How to create a horizontal navigation menu using lists?
+
+Yes, we create a navigation menu using <ul>, <li>, and <a> tags. By default, it appears vertically because
+<li> elements are block-level. However, we can use CSS properties to style it horizontally. -->
+
+<!-- 
+Why use <ul> + <li> for navigation instead of just <a> tags?
+
+We can achieve the same visual result using only <a> tags with CSS, but that approach only shows 
+individual links, not a grouped menu. Using <ul> and <li> is semantically correct and clearly indicates 
+that the links belong together as a structured navigation list. -->
+
+<!-- Tables:- -->
+
+<!-- 
+.) we have 3 sections in a table.
+
+1) <thead>(used for header of table.<tr> for row and <th> for heading)
+2) <tbody>(used for body of table.<tr> for row and <td> for table data)
+3) <tfoot>(used for footer of table.<tr> for row and <td> for table footer data)        -->
+
+
+<!-- 
+What is colspan and rowspan?
+
+colspan is used to merge multiple columns horizontally, and rowspan is used to merge
+multiple rows vertically in an HTML table. -->
+
+<!--
+
+ .) Caption used directly inside table tag. -->
+
+<!-- 
+Why shouldnot you use tables for page layout?
+
+Tables were historically used for page layout, but this practice is now discouraged because tables are 
+slow to render, non-responsive, and create rigid, inaccessible structures. Modern CSS techniques like 
+Flexbox and Grid are far more flexible, accessible, and responsive for page layout design. -->
+
+<!-- Forms -->
+
+
+<!--
+
+.) The for attribute in the <label> tag is linked to the id of an input field, so clicking the label 
+automatically focuses on that input. This improves accessibility and user experience, especially for 
+checkboxes and radio buttons where clicking the label selects the option.
+
+.) Form tag is ensure automatic browser submission when click on submit. Otherwise it consider as simple
+input.if we can use any api endpoint in form action attribute so we can access form data and later store
+in db.
+
+.)Fieldset tag is used to grouped all related input together and legends tag is used for heading of all
+inputs.
+
+.)enctype="multipart/form-data" is an encoding type that allows form data to be sent in parts, making it 
+possible to upload files (like images, documents, or videos) to the server. You should use it when your 
+form includes an <input type="file"> element for file uploads, and always use it with method="POST".
+
+.)Yes, novalidate disables the browser's built-in (frontend) validation, such as checking required, 
+type="email", or pattern attributes. This prevents the browser from showing default validation error 
+messages and allows the form to be submitted freely. However, it does not disable backend validation, 
+which should still be performed on the server for security.
+
+.)The value attribute specifies the initial or default data sent to the server for that input field when 
+the form is submitted. For example, in <input type="text" name="city" value="New York">, "New York" is 
+pre-filled and will be submitted as the city's value.
+
+.)The name attribute is used to identify the form data on the backend server, acting as the key or 
+variable name for the input's value. Without the name attribute, the browser won't send that input's data
+when the form is submitted, and the server cannot access or process it. -->
