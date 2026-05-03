@@ -1,0 +1,83 @@
+<!-- 
+CSS:-
+HTML provides the structural skeleton of a webpage, defining its content and layout. CSS adds styling and visual design to that structure, enhancing user experience through colors, fonts, spacing, and responsive interactions. -->
+
+<!-- 
+DOM:-
+The DOM (Document Object Model) represents elements of a webpage as a tree structure (hierarchy of parent-child nodes). When a page loads, developers target DOM elements using CSS or JavaScript to style or manipulate the webpage dynamically.  -->
+
+<!-- 
+ID:-
+An id is a unique identifier for a single HTML element. No two elements on the same page can share the same id. It is used for directly targeting a specific element with CSS (via #id). -->
+
+<!-- 
+Classes:-
+A class can be assigned to multiple elements, and a single element can belong to multiple classes at once. This allows reusability and flexible styling across a webpage. -->
+
+<!-- 
+3 ways to add css:-
+.) Inline CSS(Higher preference)
+.) Style Tag(Higher preference if external css link is above of style tag)
+.) External CSS(Higher preference if external css link is below of style tag) -->
+
+<!-- 
+CSS Selectors:-
+use to select an html element for styling.
+
+Element selector:-
+Used to target an element with tag name.
+
+p {
+  color: blue;
+}
+
+id selector:-
+Used to target an element with id. Used # to target an id.
+
+#header {
+  background: black;
+}
+
+Class Selector:-
+Used to target an element with class. Used "." to target a class.
+
+.btn {
+  padding: 10px;
+} -->
+
+<!-- 
+.) We can also grouped element using grouping selector like this.
+
+h1, p, .btn, #header {
+  color: red;
+  margin: 10px;
+} -->
+
+<!-- 
+.) We can also use element class as a selector like this.
+
+p.red{
+    color:red
+}
+all paragraph of class red will get color of red. -->
+
+<!-- 
+.) * used as universal selector to select all elements.
+
+*{
+    margin:0
+    padding:0
+} -->
+
+<!-- 
+How does the browser decide which CSS rule to apply when multiple rules conflict?
+
+Step 1: Check for !important — if present, it wins.
+Step 2: If no !important, compare specificity — Inline > ID > Class > Element.
+Step 3: If specificity is the same, the last rule written in the CSS file wins.
+cascading in css also refer to this -->
+
+<!-- 
+Why we avaoid same id in multiple element in a same page
+
+We avoid using the same id on multiple elements in the same page because it violates HTML standards, causes unpredictable behavior in JavaScript (only the first element is selected), and even though CSS may style all of them, it leads to poor maintainability, confusion, and accessibility issues. -->
