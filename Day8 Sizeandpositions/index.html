@@ -1,0 +1,32 @@
+Unit of describing size:-
+px
+em(relative parent size)
+rem(relative html font size)
+vw(unit relative to 1% viewport width)
+vh(unit relative to 1% viewport height)
+percentage(relative to parent element)
+
+Whats wrong with px?
+px is relative to viewing device. So when we use px so it is responsive only in device in which website is created not other devices.
+
+min/max height/width:-
+These properties is used to set boundaries for element so it can grow or shrink with in that range. If it is exceed, we handle it with overflow properties like scroll,auto,hidden.
+
+Positions:-
+
+relative:-
+Moves element from its original position and did not affect any other elements of document flow. All offset works here.
+
+Absolute:-
+Element moves according to first non static ancestors. If there is no so move according to html page and browser.All offset properties work here.
+
+Fixed:-
+Move element according to browsers page. Always visible on screen not scroll away.Element is out of document flow so we need to set width gain.
+
+Sticky:-
+Element is moving according to user's scroll without using offset it is not works. Shows temporary on screen and scroll away once after parent height is full scroll.
+
+Static:-
+By default position is static.Offset is not work here and it is same as document flow.
+
+.) When there is overlapping between elements so we used z-index to avoid this. Higher z-index is on top.
